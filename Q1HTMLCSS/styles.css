@@ -1,0 +1,66 @@
+/* Navigation Menu Bar */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.dropdown-header {
+  background-color: #c00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.dropdown-header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav li:hover > a {
+  background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  width: 200px;
+  z-index: 1;
+  padding: 0;
+}
+
+.dropdown li {
+  width: 100%;
+}
+
+.dropdown li a {
+  padding: 10px;
+}
+
+.dropdown li:hover > a {
+  background-color: #555;
+}
+
+nav li:hover > .dropdown {
+  display: block;
+}
